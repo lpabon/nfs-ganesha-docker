@@ -23,10 +23,23 @@
         "nodeSelector": {
           "storagenode": "nfs-ganesha"
         },
-        "hostNetwork": true,
         "containers": [
           {
             "image": "quay.io/luis_pabon0/ganesha",
+            "ports" : [
+                {
+                    "name": "nfs",
+                    "containerPort": 2049
+                },
+                {
+                    "name": "mountd",
+                    "containerPort": 20048
+                },
+                {
+                    "name": "rpcbind",
+                    "containerPort": 111
+                }
+            ],
             "imagePullPolicy": "Always",
             "name": "nfs-ganesha",
             "volumeMounts": [

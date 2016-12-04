@@ -8,5 +8,5 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    server: 10.0.0.192
+    server: 10.3.0.15
     path: "/exports"

@@ -6,4 +6,6 @@ RUN mkdir -p /exports
 VOLUME /exports
 EXPOSE 2049/tcp
 ADD vfs.conf /vfs.conf
-ENTRYPOINT ["ganesha.nfsd", "-F", "-L", "/var/log/ganesha.log", "-f", "/vfs.conf"]
+ADD start.sh /start.sh
+RUN chmod +x /start.sh
+ENTRYPOINT ["/start.sh"]
