@@ -1,3 +1,5 @@
+# Researching... Does not work atm
+
 # What it is?
 
 An experiment to run NFS Ganesha VFS module in a Container
@@ -21,5 +23,4 @@ On RHEL based Linux:
   # docker run -ti --net=host --privileged  -v /home/exports/:/exports ganesha
   # # test mount on another terminal
   # mount localhost:/exports /mnt
-
-
+```
