@@ -1,7 +1,6 @@
 FROM fedora
-MAINTAINER Huamin Chen, hchen@redhat.com
 
-RUN dnf install -y nfs-ganesha nfs-ganesha-vfs
+RUN dnf install -y rpcbind nfs-ganesha nfs-ganesha-vfs
 RUN mkdir -p /exports
 VOLUME /exports
 EXPOSE 2049/tcp
