@@ -22,3 +22,7 @@ by labeling it with: `storagenode=nfs-ganesha`.
 
 Then bring up the NFS storage and applications by typing: `./up.sh`.
 To shut it down type: `./down.sh`.
+
+## Note
+
+These files are based on https://github.com/kubernetes/kubernetes/tree/master/examples/volumes/nfs
