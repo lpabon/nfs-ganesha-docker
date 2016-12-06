@@ -40,7 +40,7 @@
                     "containerPort": 111
                 }
             ],
-            "imagePullPolicy": "Always",
+            "imagePullPolicy": "IfNotPresent",
             "name": "nfs-ganesha",
             "volumeMounts": [
               {

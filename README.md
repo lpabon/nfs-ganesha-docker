@@ -1,19 +1,6 @@
-# Researching... Does not work atm
-
 # What it is?
 
 An experiment to run NFS Ganesha VFS module in a Container
-
-# Prerequisites
-
-Make sure `rpcbind` service is started, otherwise `VFS module failed to unregister` error will occur:
-
-On RHEL based Linux:
-
-```bash
- # yum install rpcbind -y
- # systemctl start rpcbind
-```
 
 # Build and run the Container
 
@@ -24,3 +11,7 @@ On RHEL based Linux:
   # # test mount on another terminal
   # mount localhost:/exports /mnt
 ```
+
+# Test on Kubernetes
+
+You can use the existing objects available, or run the demo.  To bring up the NFS storage and the applications using it type: `./up.sh`.  To shut it down type: `./down.sh`.

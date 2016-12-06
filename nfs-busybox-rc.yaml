@@ -6,7 +6,7 @@ kind: ReplicationController
 metadata:
   name: nfs-busybox
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     name: nfs-busybox
   template:
